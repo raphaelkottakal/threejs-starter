@@ -18,12 +18,15 @@ gui.close();
 gui.add(guiValues, 'addHelpers');
 gui.add(guiValues, 'orbitCam');
 gui.addColor(guiValues, 'color');
+// camera
 camControls.enableDamping = true;
 camControls.enabled = false;
 camera.position.z = 8;
+// light
 light.position.x = 16;
 light.position.y = 16;
 light.position.z = 16;
+// renderer
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 
@@ -31,7 +34,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 scene.add(light);
 scene.add(ambientLight);
 
-// add meshes renderer
+// add meshes to scene
 scene.add(cube);
 
 // animation
